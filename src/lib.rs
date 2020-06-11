@@ -1,7 +1,7 @@
-// mod args;
-// mod chunk;
+// pub mod args;
+pub mod chunk;
 pub mod chunk_type;
-// mod commands;
-// mod png;
+// pub mod commands;
+pub mod png;
 
 
