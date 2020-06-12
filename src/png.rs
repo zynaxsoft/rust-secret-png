@@ -81,7 +81,6 @@ impl TryFrom<&[u8]> for Png {
         let png_length = value.len();
         let mut result = Png::new();
         loop {
-            println!("i{}, len{}", i, png_length);
             let chunk = Chunk::try_from(&value[i..]).unwrap();
             i += 4 + 4 + chunk.length() as usize + 4;
             result.append_chunk(chunk);
